@@ -1,6 +1,6 @@
 # testgcov_lib/CMakeLists.txt
 
-option(ENABLE_COVERAGE "Enable code coverage" OFF)
+option(ENABLE_COVERAGE "Enable code coverage" ON)
 
 add_library(testgcov_lib
   STATIC
@@ -32,5 +32,4 @@ if(ENABLE_COVERAGE)
   else()
     message(FATAL_ERROR "Code coverage is not supported for the current compiler")
   endif()
-
 endif()
